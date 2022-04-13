@@ -22,15 +22,15 @@ const sketch = () => {
   
     context.fillStyle = 'black';
     
-    const cx = width * 0.5;
-    const cy = height * 0.5;
+    const cx = width;
+    const cy = height;
     const w = width * 0.01;
-    const h = height * 0.03;
+    const h = height * 0.05;
 
     let x, y; 
 
-    const num = 100;
-    const radius = width * 0.2;
+    const num = 70;
+    const radius = width * 0.5;
 
     for (let i = 0; i < num; i++){
       const slice = math.degToRad(360/ num);
@@ -41,7 +41,7 @@ const sketch = () => {
 /////////////////////////////////////
       context.save();
       context.translate(cx , cy);
-      context.translate(x * 1.5, y * 1.8);
+      context.translate(x * 1.5, y * 1.5);
       context.rotate(-angle * 1.5);
       context.scale(random.range(0.1, 2), random.range(0.2, 0.5));
       
