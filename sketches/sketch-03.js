@@ -41,7 +41,7 @@ const sketch = ({ context, width, height }) => {
 
         if(dist > 200) continue; // continue indica que siga con la otra iteracion del loop, por tanto, todo lo que va desp de continue se ignora
 
-        context.lineWidth = math.mapRange(dist,0, 200, 12, 1);
+        context.lineWidth = math.mapRange(dist,0, 200, 12, 1);//cambia el ancho de la linea segun la distancia
 
         context.beginPath();
         context.moveTo(agent.pos.x, agent.pos.y);
